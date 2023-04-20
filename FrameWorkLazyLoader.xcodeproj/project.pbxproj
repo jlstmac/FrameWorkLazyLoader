@@ -14,7 +14,53 @@
 		E6C5555429F1329B00E25695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C5555329F1329B00E25695 /* Assets.xcassets */; };
 		E6C5555729F1329B00E25695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C5555529F1329B00E25695 /* LaunchScreen.storyboard */; };
 		E6C5555A29F1329B00E25695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5555929F1329B00E25695 /* main.m */; };
+		E6C5560529F14C1800E25695 /* FrameworkLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = E6C5560429F14C1800E25695 /* FrameworkLoader.mm */; };
+		E6C5563229F14FF200E25695 /* DynamicDemo.docc in Sources */ = {isa = PBXBuildFile; fileRef = E6C5563129F14FF200E25695 /* DynamicDemo.docc */; };
+		E6C5563829F14FF200E25695 /* DynamicDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5562E29F14FF200E25695 /* DynamicDemo.framework */; };
+		E6C5563F29F14FF200E25695 /* DynamicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5563E29F14FF200E25695 /* DynamicDemoTests.m */; };
+		E6C5564029F14FF200E25695 /* DynamicDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C5563029F14FF200E25695 /* DynamicDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C5564D29F1500C00E25695 /* Worker.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C5564B29F1500C00E25695 /* Worker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C5564E29F1500C00E25695 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5564C29F1500C00E25695 /* Worker.m */; };
+		E6C5565D29F1522000E25695 /* DynamicDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5562E29F14FF200E25695 /* DynamicDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6C5563929F14FF200E25695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C5553C29F1329A00E25695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C5562D29F14FF200E25695;
+			remoteInfo = DynamicDemo;
+		};
+		E6C5563B29F14FF200E25695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C5553C29F1329A00E25695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C5554329F1329A00E25695;
+			remoteInfo = FrameWorkLazyLoader;
+		};
+		E6C5565E29F1522000E25695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6C5553C29F1329A00E25695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6C5562D29F14FF200E25695;
+			remoteInfo = DynamicDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6C5566029F1522000E25695 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E6C5565D29F1522000E25695 /* DynamicDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E6C5554429F1329A00E25695 /* FrameWorkLazyLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameWorkLazyLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +75,20 @@
 		E6C5555629F1329B00E25695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6C5555829F1329B00E25695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C5555929F1329B00E25695 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6C555F829F1458B00E25695 /* DynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicFramework.framework; path = ../DynamicFramework/Products/DynamicFramework.framework; sourceTree = "<group>"; };
+		E6C555FF29F14B5D00E25695 /* DynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicFramework.framework; path = FrameWorkLazyLoader/DynamicFramework.framework; sourceTree = "<group>"; };
+		E6C5560329F14C1800E25695 /* FrameworkLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkLoader.h; sourceTree = "<group>"; };
+		E6C5560429F14C1800E25695 /* FrameworkLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameworkLoader.mm; sourceTree = "<group>"; };
+		E6C5560D29F14FC300E25695 /* DynamicDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDemo.h; sourceTree = "<group>"; };
+		E6C5560E29F14FC300E25695 /* DynamicDemo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DynamicDemo.docc; sourceTree = "<group>"; };
+		E6C5561B29F14FC400E25695 /* DynamicDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDemoTests.m; sourceTree = "<group>"; };
+		E6C5562E29F14FF200E25695 /* DynamicDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C5563029F14FF200E25695 /* DynamicDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDemo.h; sourceTree = "<group>"; };
+		E6C5563129F14FF200E25695 /* DynamicDemo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DynamicDemo.docc; sourceTree = "<group>"; };
+		E6C5563729F14FF200E25695 /* DynamicDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C5563E29F14FF200E25695 /* DynamicDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDemoTests.m; sourceTree = "<group>"; };
+		E6C5564B29F1500C00E25695 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		E6C5564C29F1500C00E25695 /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +99,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C5562B29F14FF200E25695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C5563429F14FF200E25695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C5563829F14FF200E25695 /* DynamicDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,7 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				E6C5554629F1329A00E25695 /* FrameWorkLazyLoader */,
+				E6C5560C29F14FC300E25695 /* DynamicDemo */,
+				E6C5561A29F14FC400E25695 /* DynamicDemoTests */,
+				E6C5562F29F14FF200E25695 /* DynamicDemo */,
+				E6C5563D29F14FF200E25695 /* DynamicDemoTests */,
 				E6C5554529F1329A00E25695 /* Products */,
+				E6C555F729F1458B00E25695 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				E6C5554429F1329A00E25695 /* FrameWorkLazyLoader.app */,
+				E6C5562E29F14FF200E25695 /* DynamicDemo.framework */,
+				E6C5563729F14FF200E25695 /* DynamicDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +149,8 @@
 				E6C5554B29F1329A00E25695 /* SceneDelegate.m */,
 				E6C5554D29F1329A00E25695 /* ViewController.h */,
 				E6C5554E29F1329A00E25695 /* ViewController.m */,
+				E6C5560329F14C1800E25695 /* FrameworkLoader.h */,
+				E6C5560429F14C1800E25695 /* FrameworkLoader.mm */,
 				E6C5555029F1329A00E25695 /* Main.storyboard */,
 				E6C5555329F1329B00E25695 /* Assets.xcassets */,
 				E6C5555529F1329B00E25695 /* LaunchScreen.storyboard */,
@@ -76,7 +160,64 @@
 			path = FrameWorkLazyLoader;
 			sourceTree = "<group>";
 		};
+		E6C555F729F1458B00E25695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C555FF29F14B5D00E25695 /* DynamicFramework.framework */,
+				E6C555F829F1458B00E25695 /* DynamicFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6C5560C29F14FC300E25695 /* DynamicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5560D29F14FC300E25695 /* DynamicDemo.h */,
+				E6C5560E29F14FC300E25695 /* DynamicDemo.docc */,
+				E6C5564B29F1500C00E25695 /* Worker.h */,
+				E6C5564C29F1500C00E25695 /* Worker.m */,
+			);
+			path = DynamicDemo;
+			sourceTree = "<group>";
+		};
+		E6C5561A29F14FC400E25695 /* DynamicDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5561B29F14FC400E25695 /* DynamicDemoTests.m */,
+			);
+			path = DynamicDemoTests;
+			sourceTree = "<group>";
+		};
+		E6C5562F29F14FF200E25695 /* DynamicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5563029F14FF200E25695 /* DynamicDemo.h */,
+				E6C5563129F14FF200E25695 /* DynamicDemo.docc */,
+			);
+			path = DynamicDemo;
+			sourceTree = "<group>";
+		};
+		E6C5563D29F14FF200E25695 /* DynamicDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5563E29F14FF200E25695 /* DynamicDemoTests.m */,
+			);
+			path = DynamicDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E6C5562929F14FF200E25695 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C5564D29F1500C00E25695 /* Worker.h in Headers */,
+				E6C5564029F14FF200E25695 /* DynamicDemo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E6C5554329F1329A00E25695 /* FrameWorkLazyLoader */ = {
@@ -86,15 +227,54 @@
 				E6C5554029F1329A00E25695 /* Sources */,
 				E6C5554129F1329A00E25695 /* Frameworks */,
 				E6C5554229F1329A00E25695 /* Resources */,
+				E6C5566029F1522000E25695 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E6C5565F29F1522000E25695 /* PBXTargetDependency */,
 			);
 			name = FrameWorkLazyLoader;
 			productName = FrameWorkLazyLoader;
 			productReference = E6C5554429F1329A00E25695 /* FrameWorkLazyLoader.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E6C5562D29F14FF200E25695 /* DynamicDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C5564529F14FF200E25695 /* Build configuration list for PBXNativeTarget "DynamicDemo" */;
+			buildPhases = (
+				E6C5562929F14FF200E25695 /* Headers */,
+				E6C5562A29F14FF200E25695 /* Sources */,
+				E6C5562B29F14FF200E25695 /* Frameworks */,
+				E6C5562C29F14FF200E25695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicDemo;
+			productName = DynamicDemo;
+			productReference = E6C5562E29F14FF200E25695 /* DynamicDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6C5563629F14FF200E25695 /* DynamicDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6C5564829F14FF200E25695 /* Build configuration list for PBXNativeTarget "DynamicDemoTests" */;
+			buildPhases = (
+				E6C5563329F14FF200E25695 /* Sources */,
+				E6C5563429F14FF200E25695 /* Frameworks */,
+				E6C5563529F14FF200E25695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6C5563A29F14FF200E25695 /* PBXTargetDependency */,
+				E6C5563C29F14FF200E25695 /* PBXTargetDependency */,
+			);
+			name = DynamicDemoTests;
+			productName = DynamicDemoTests;
+			productReference = E6C5563729F14FF200E25695 /* DynamicDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +287,13 @@
 				TargetAttributes = {
 					E6C5554329F1329A00E25695 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E6C5562D29F14FF200E25695 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E6C5563629F14FF200E25695 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E6C5554329F1329A00E25695;
 					};
 				};
 			};
@@ -124,6 +311,8 @@
 			projectRoot = "";
 			targets = (
 				E6C5554329F1329A00E25695 /* FrameWorkLazyLoader */,
+				E6C5562D29F14FF200E25695 /* DynamicDemo */,
+				E6C5563629F14FF200E25695 /* DynamicDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +328,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C5562C29F14FF200E25695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C5563529F14FF200E25695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,11 +352,47 @@
 				E6C5554F29F1329A00E25695 /* ViewController.m in Sources */,
 				E6C5554929F1329A00E25695 /* AppDelegate.m in Sources */,
 				E6C5555A29F1329B00E25695 /* main.m in Sources */,
+				E6C5560529F14C1800E25695 /* FrameworkLoader.mm in Sources */,
 				E6C5554C29F1329A00E25695 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6C5562A29F14FF200E25695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C5563229F14FF200E25695 /* DynamicDemo.docc in Sources */,
+				E6C5564E29F1500C00E25695 /* Worker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C5563329F14FF200E25695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C5563F29F14FF200E25695 /* DynamicDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6C5563A29F14FF200E25695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6C5562D29F14FF200E25695 /* DynamicDemo */;
+			targetProxy = E6C5563929F14FF200E25695 /* PBXContainerItemProxy */;
+		};
+		E6C5563C29F14FF200E25695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6C5554329F1329A00E25695 /* FrameWorkLazyLoader */;
+			targetProxy = E6C5563B29F14FF200E25695 /* PBXContainerItemProxy */;
+		};
+		E6C5565F29F1522000E25695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6C5562D29F14FF200E25695 /* DynamicDemo */;
+			targetProxy = E6C5565E29F1522000E25695 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E6C5555029F1329A00E25695 /* Main.storyboard */ = {
@@ -292,6 +531,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z48VZSQV9M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameWorkLazyLoader",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrameWorkLazyLoader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +543,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +563,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z48VZSQV9M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameWorkLazyLoader",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrameWorkLazyLoader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +575,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +585,96 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6C5564629F14FF200E25695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z48VZSQV9M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlstmac.DynamicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6C5564729F14FF200E25695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z48VZSQV9M;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlstmac.DynamicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6C5564929F14FF200E25695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlstmac.DynamicDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrameWorkLazyLoader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrameWorkLazyLoader";
+			};
+			name = Debug;
+		};
+		E6C5564A29F14FF200E25695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jlstmac.DynamicDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrameWorkLazyLoader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrameWorkLazyLoader";
 			};
 			name = Release;
 		};
@@ -354,6 +695,24 @@
 			buildConfigurations = (
 				E6C5555E29F1329B00E25695 /* Debug */,
 				E6C5555F29F1329B00E25695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C5564529F14FF200E25695 /* Build configuration list for PBXNativeTarget "DynamicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C5564629F14FF200E25695 /* Debug */,
+				E6C5564729F14FF200E25695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6C5564829F14FF200E25695 /* Build configuration list for PBXNativeTarget "DynamicDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6C5564929F14FF200E25695 /* Debug */,
+				E6C5564A29F14FF200E25695 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
