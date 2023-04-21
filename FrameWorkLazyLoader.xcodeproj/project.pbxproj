@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E67482BB29F2294F00717ACD /* DynamicDemoService.h in Headers */ = {isa = PBXBuildFile; fileRef = E67482B929F2294F00717ACD /* DynamicDemoService.h */; };
+		E67482BC29F2294F00717ACD /* DynamicDemoService.m in Sources */ = {isa = PBXBuildFile; fileRef = E67482BA29F2294F00717ACD /* DynamicDemoService.m */; };
+		E67482BF29F2376700717ACD /* SegmentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E67482BE29F2376700717ACD /* SegmentHandler.m */; };
+		E674832D29F27C6400717ACD /* RouterAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E674832C29F27C6400717ACD /* RouterAdapter.m */; };
 		E6C5554929F1329A00E25695 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5554829F1329A00E25695 /* AppDelegate.m */; };
 		E6C5554C29F1329A00E25695 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5554B29F1329A00E25695 /* SceneDelegate.m */; };
 		E6C5554F29F1329A00E25695 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5554E29F1329A00E25695 /* ViewController.m */; };
@@ -19,7 +23,7 @@
 		E6C5563829F14FF200E25695 /* DynamicDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5562E29F14FF200E25695 /* DynamicDemo.framework */; };
 		E6C5563F29F14FF200E25695 /* DynamicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5563E29F14FF200E25695 /* DynamicDemoTests.m */; };
 		E6C5564029F14FF200E25695 /* DynamicDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C5563029F14FF200E25695 /* DynamicDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6C5564D29F1500C00E25695 /* Worker.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C5564B29F1500C00E25695 /* Worker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C5564D29F1500C00E25695 /* Worker.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C5564B29F1500C00E25695 /* Worker.h */; };
 		E6C5564E29F1500C00E25695 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C5564C29F1500C00E25695 /* Worker.m */; };
 		E6C5565D29F1522000E25695 /* DynamicDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6C5562E29F14FF200E25695 /* DynamicDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -63,6 +67,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E67482B929F2294F00717ACD /* DynamicDemoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDemoService.h; sourceTree = "<group>"; };
+		E67482BA29F2294F00717ACD /* DynamicDemoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicDemoService.m; sourceTree = "<group>"; };
+		E67482BD29F2376700717ACD /* SegmentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentHandler.h; sourceTree = "<group>"; };
+		E67482BE29F2376700717ACD /* SegmentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentHandler.m; sourceTree = "<group>"; };
+		E674832A29F27B8D00717ACD /* DynamicDemoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicDemoService.h; sourceTree = "<group>"; };
+		E674832B29F27C6400717ACD /* RouterAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAdapter.h; sourceTree = "<group>"; };
+		E674832C29F27C6400717ACD /* RouterAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAdapter.m; sourceTree = "<group>"; };
 		E6C5554429F1329A00E25695 /* FrameWorkLazyLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameWorkLazyLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C5554729F1329A00E25695 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6C5554829F1329A00E25695 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +128,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E674832E29F2838500717ACD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E674832F29F2839F00717ACD /* Service */,
+				E674832B29F27C6400717ACD /* RouterAdapter.h */,
+				E674832C29F27C6400717ACD /* RouterAdapter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E674832F29F2839F00717ACD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E674832A29F27B8D00717ACD /* DynamicDemoService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		E6C5553B29F1329A00E25695 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +172,7 @@
 		E6C5554629F1329A00E25695 /* FrameWorkLazyLoader */ = {
 			isa = PBXGroup;
 			children = (
+				E674832E29F2838500717ACD /* Router */,
 				E6C5554729F1329A00E25695 /* AppDelegate.h */,
 				E6C5554829F1329A00E25695 /* AppDelegate.m */,
 				E6C5554A29F1329A00E25695 /* SceneDelegate.h */,
@@ -151,6 +181,8 @@
 				E6C5554E29F1329A00E25695 /* ViewController.m */,
 				E6C5560329F14C1800E25695 /* FrameworkLoader.h */,
 				E6C5560429F14C1800E25695 /* FrameworkLoader.mm */,
+				E67482BD29F2376700717ACD /* SegmentHandler.h */,
+				E67482BE29F2376700717ACD /* SegmentHandler.m */,
 				E6C5555029F1329A00E25695 /* Main.storyboard */,
 				E6C5555329F1329B00E25695 /* Assets.xcassets */,
 				E6C5555529F1329B00E25695 /* LaunchScreen.storyboard */,
@@ -176,6 +208,8 @@
 				E6C5560E29F14FC300E25695 /* DynamicDemo.docc */,
 				E6C5564B29F1500C00E25695 /* Worker.h */,
 				E6C5564C29F1500C00E25695 /* Worker.m */,
+				E67482B929F2294F00717ACD /* DynamicDemoService.h */,
+				E67482BA29F2294F00717ACD /* DynamicDemoService.m */,
 			);
 			path = DynamicDemo;
 			sourceTree = "<group>";
@@ -212,6 +246,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67482BB29F2294F00717ACD /* DynamicDemoService.h in Headers */,
 				E6C5564D29F1500C00E25695 /* Worker.h in Headers */,
 				E6C5564029F14FF200E25695 /* DynamicDemo.h in Headers */,
 			);
@@ -349,10 +384,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E674832D29F27C6400717ACD /* RouterAdapter.m in Sources */,
 				E6C5554F29F1329A00E25695 /* ViewController.m in Sources */,
 				E6C5554929F1329A00E25695 /* AppDelegate.m in Sources */,
 				E6C5555A29F1329B00E25695 /* main.m in Sources */,
 				E6C5560529F14C1800E25695 /* FrameworkLoader.mm in Sources */,
+				E67482BF29F2376700717ACD /* SegmentHandler.m in Sources */,
 				E6C5554C29F1329A00E25695 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +400,7 @@
 			files = (
 				E6C5563229F14FF200E25695 /* DynamicDemo.docc in Sources */,
 				E6C5564E29F1500C00E25695 /* Worker.m in Sources */,
+				E67482BC29F2294F00717ACD /* DynamicDemoService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
